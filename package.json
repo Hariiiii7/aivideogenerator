@@ -1,0 +1,21 @@
+{
+  "name": "lecture-animation",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "remotion studio src/index.ts --port=3000",
+    "typecheck": "tsc --noEmit",
+    "render": "remotion render src/index.ts LectureIntro out/lecture-intro.mp4 --codec=h264 --concurrency=2 --browser-executable=/usr/bin/chromium"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.535",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "remotion": "4.0.535"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "typescript": "^5.9.0"
+  }
+}
