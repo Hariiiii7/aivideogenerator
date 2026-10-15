@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "file": "out/password-lecture-1080p-compatible.mp4",
+  "codec": "H.264 Main, level 4.1",
+  "pixelFormat": "yuv420p",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "durationSeconds": 75.989,
+  "frames": 2279,
+  "originalAudioHash": "SHA256=b891e1e1592f4e08b3e0920634e66e1b072f9248edf21c358629e487045f71f4",
+  "audioUnchanged": true,
+  "fullDecodePassed": true
+}
