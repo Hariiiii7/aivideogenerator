@@ -68,7 +68,7 @@ export function validateStoryboard(input: unknown): ValidationResult {
     s.elements.forEach((e: unknown, j: number) => {
       if (!object(e) || !text(e.id, 80) || !elementTypes.includes(e.type as string) ||
           (e.text !== undefined && (typeof e.text !== 'string' || e.text.length > 240)) ||
-          (e.atSeconds !== undefined && (!finite(e.atSeconds) || e.atSeconds < s.startSeconds! || e.atSeconds > s.endSeconds!)))
+          (e.atSeconds !== undefined && (!finite(e.atSeconds) || e.atSeconds < (s.startSeconds as number) || e.atSeconds > (s.endSeconds as number))))
         errors.push(`${at}.elements[${j}] is invalid`);
     });
   });
